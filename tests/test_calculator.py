@@ -31,11 +31,11 @@ def test_subtract_cases(a, b, expected):
 ])
 
 def test_multiplication_cases(a, b, expected):
-    assert multiply(a, b) == expected
+    assert multiply(a, b) == expectedS
 
 @pytest.mark.parametrize("a, b, expected", [
     (6,   2,   3),    # positive
-    (0,   1,   0),    # zeros
+    (0,   0,   0),    # zeros
     (-2,  2,   -1),   # negative
     (100, 50, 2),     # large values
 ])
